@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludar renderizando</title>
+</head>
+<body>
+    <header>{% include "barra.html"%}</header>
+
+    <h1>Primer archivo renderizado de Prueba</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nisi maiores inventore adipisci non accusamus maxime minima praesentium nam! Magni unde facere ducimus! Officia tenetur reprehenderit quasi sunt, qui accusantium!</p>
+    <p>El autor es {{nombre.upper}} {{apellido.upper}}</p>
+    <p><strong>Temas del Curso</strong></p>
+    <p>
+        <ul>
+        {% for i in temas %}
+            <li>{{i}}</li>
+        {% endfor %}
+        </ul>
+    </p>
+</body>
+</html>

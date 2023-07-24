@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}Base{% endblock %}
+    </title>
+</head>
+<body>
+    <header> 
+        <ul>
+            <li><a href="http://127.0.0.1:8000/base/">Base</a></li>
+            <li>Servicios</li>
+            <li><a href="http://127.0.0.1:8000/hija1/">Hija 1</a></li>
+            <li><a href="http://127.0.0.1:8000/hija2/">Hija 2</a></li>
+            <li>Acerca de</li>
+        </ul>
+    </header>
+    <h1>Pildoras informaticas</h1>
+    <h3>Curso de programacion, ofimatica y diseño web</h3>
+
+    {% block content%}
+    {% endblock %}
+
+    <footer>Cursos gratuitos. Gracias por su visita </footer>
+    
+</body>
+</html>
